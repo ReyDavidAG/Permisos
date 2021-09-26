@@ -1,5 +1,5 @@
 create table usuarios(
-idusuario int,
+idusuario int primary key auto_increment,
 nombre varchar(150),
 apellidop varchar(50),
 apellidom varchar(50),
