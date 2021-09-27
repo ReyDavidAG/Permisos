@@ -1,0 +1,14 @@
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\bin\Debug\PresentacionesPermisos.exe
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\bin\Debug\PresentacionesPermisos.pdb
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.csproj.AssemblyReference.cache
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.FrmPrincipal.resources
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.Login.resources
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.Properties.Resources.resources
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.csproj.GenerateResource.cache
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.csproj.CoreCompileInputs.cache
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.exe
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.pdb
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.FrmAddUser.resources
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.FrmRefacciones.resources
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.FrmTaller.resources
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.FrmUsuarios.resources
