@@ -15,7 +15,7 @@ namespace Manejadores
 
         public string Guardar(EntidadUsuarios user)
         {
-            return b.Comando(string.Format("insertar into usuarios values(null, '{0}', '{1}', '{2}', '{3}', '{4}', '{5}');", user.Nombre, user.Password, user.Apellidop, user.Apellidom, user.Apellidom,
+            return b.Comando(string.Format("insert into usuarios values(null, '{0}', '{1}', '{2}', '{3}', '{4}', '{5}');", user.Nombre, user.Password, user.Apellidop, user.Apellidom,
                 user.Fechanacimiento, user.RFC));
         }
         public void Mostrar(DataGridView tabla, string dato)
@@ -26,7 +26,7 @@ namespace Manejadores
         public string Editar(EntidadUsuarios user)
         {
             return b.Comando(string.Format("update usuarios set nombre = '{0}', password = '{1}', apellidop = '{2}', apellidom = '{3}', " +
-                "fechanacimiento = '{4}', rfc = '{5}', '{6}' where rfc = '{6}';", user.Nombre, user.Password, user.Apellidop, user.Apellidom, user.Fechanacimiento, user.RFC));
+                "fechanacimiento = '{4}', rfc = '{5}' where rfc = '{5}';", user.Nombre, user.Password, user.Apellidop, user.Apellidom, user.Fechanacimiento, user.RFC));
         }
         public string Borrar(EntidadUsuarios user)
         {

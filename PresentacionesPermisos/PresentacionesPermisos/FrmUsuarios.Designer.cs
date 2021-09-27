@@ -52,6 +52,7 @@ namespace PresentacionesPermisos
             this.BtnEliminar.TabIndex = 27;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = false;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // BtnEditar
             // 
@@ -65,6 +66,7 @@ namespace PresentacionesPermisos
             this.BtnEditar.TabIndex = 26;
             this.BtnEditar.Text = "Editar";
             this.BtnEditar.UseVisualStyleBackColor = false;
+            this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
             // 
             // LblCategorias
             // 
@@ -89,6 +91,7 @@ namespace PresentacionesPermisos
             this.BtnCancelar.TabIndex = 24;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // BtnAgregar
             // 
@@ -122,6 +125,7 @@ namespace PresentacionesPermisos
             this.TxtBuscar.Name = "TxtBuscar";
             this.TxtBuscar.Size = new System.Drawing.Size(524, 23);
             this.TxtBuscar.TabIndex = 21;
+            this.TxtBuscar.TextChanged += new System.EventHandler(this.TxtBuscar_TextChanged);
             // 
             // DTG
             // 
@@ -131,6 +135,7 @@ namespace PresentacionesPermisos
             this.DTG.Name = "DTG";
             this.DTG.Size = new System.Drawing.Size(653, 365);
             this.DTG.TabIndex = 20;
+            this.DTG.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTG_CellEnter);
             // 
             // FrmUsuarios
             // 
@@ -146,6 +151,7 @@ namespace PresentacionesPermisos
             this.Controls.Add(this.TxtBuscar);
             this.Controls.Add(this.DTG);
             this.Name = "FrmUsuarios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FrmUsuarios";
             this.Load += new System.EventHandler(this.FrmUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DTG)).EndInit();
