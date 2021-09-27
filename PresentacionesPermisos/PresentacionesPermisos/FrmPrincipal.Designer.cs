@@ -30,12 +30,12 @@ namespace PresentacionesPermisos
         private void InitializeComponent()
         {
             this.TLSMenu = new System.Windows.Forms.ToolStrip();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.BtnInicio = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.BtnAdd = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.BtnAgregar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.TLSMenu.SuspendLayout();
             this.SuspendLayout();
@@ -59,21 +59,6 @@ namespace PresentacionesPermisos
             this.TLSMenu.TabIndex = 0;
             this.TLSMenu.Text = "toolStrip1";
             // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(126, 6);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(126, 6);
-            // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(126, 6);
-            // 
             // BtnInicio
             // 
             this.BtnInicio.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -84,6 +69,11 @@ namespace PresentacionesPermisos
             this.BtnInicio.Size = new System.Drawing.Size(126, 22);
             this.BtnInicio.Text = "Inicio";
             this.BtnInicio.Click += new System.EventHandler(this.BtnInicio_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(126, 6);
             // 
             // BtnAdd
             // 
@@ -96,6 +86,11 @@ namespace PresentacionesPermisos
             this.BtnAdd.Text = "Usuario";
             this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(126, 6);
+            // 
             // BtnAgregar
             // 
             this.BtnAgregar.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -105,6 +100,11 @@ namespace PresentacionesPermisos
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.Size = new System.Drawing.Size(126, 22);
             this.BtnAgregar.Text = "Refacciones";
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(126, 6);
             // 
             // toolStripButton1
             // 
@@ -127,6 +127,7 @@ namespace PresentacionesPermisos
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPrincipal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.TLSMenu.ResumeLayout(false);
             this.TLSMenu.PerformLayout();
             this.ResumeLayout(false);
