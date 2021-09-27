@@ -15,7 +15,7 @@ namespace Manejadores
 
         public string Guardar(EntidadUsuarios user)
         {
-            return b.Comando(string.Format("insertar into usuarios(null, '{0}', '{1}', '{2}', '{3}', '{4}', '{5}');", user.Nombre, user.Password, user.Apellidop, user.Apellidom, user.Apellidom,
+            return b.Comando(string.Format("insertar into usuarios values(null, '{0}', '{1}', '{2}', '{3}', '{4}', '{5}');", user.Nombre, user.Password, user.Apellidop, user.Apellidom, user.Apellidom,
                 user.Fechanacimiento, user.RFC));
         }
         public void Mostrar(DataGridView tabla, string dato)

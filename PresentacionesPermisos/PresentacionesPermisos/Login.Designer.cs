@@ -34,6 +34,7 @@ namespace PresentacionesPermisos
             this.TxtUsuario = new System.Windows.Forms.TextBox();
             this.TxtContrasena = new System.Windows.Forms.TextBox();
             this.BtnLogin = new System.Windows.Forms.Button();
+            this.CbMostrar = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -67,6 +68,7 @@ namespace PresentacionesPermisos
             // 
             this.TxtContrasena.Location = new System.Drawing.Point(135, 84);
             this.TxtContrasena.Name = "TxtContrasena";
+            this.TxtContrasena.PasswordChar = '*';
             this.TxtContrasena.Size = new System.Drawing.Size(303, 23);
             this.TxtContrasena.TabIndex = 3;
             // 
@@ -80,11 +82,23 @@ namespace PresentacionesPermisos
             this.BtnLogin.UseVisualStyleBackColor = true;
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
+            // CbMostrar
+            // 
+            this.CbMostrar.AutoSize = true;
+            this.CbMostrar.Location = new System.Drawing.Point(135, 113);
+            this.CbMostrar.Name = "CbMostrar";
+            this.CbMostrar.Size = new System.Drawing.Size(75, 19);
+            this.CbMostrar.TabIndex = 5;
+            this.CbMostrar.Text = "Mostrar";
+            this.CbMostrar.UseVisualStyleBackColor = true;
+            this.CbMostrar.CheckedChanged += new System.EventHandler(this.CbMostrar_CheckedChanged);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(473, 201);
+            this.ClientSize = new System.Drawing.Size(467, 201);
+            this.Controls.Add(this.CbMostrar);
             this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.TxtContrasena);
             this.Controls.Add(this.TxtUsuario);
@@ -107,5 +121,6 @@ namespace PresentacionesPermisos
         private System.Windows.Forms.TextBox TxtUsuario;
         private System.Windows.Forms.TextBox TxtContrasena;
         private System.Windows.Forms.Button BtnLogin;
+        private System.Windows.Forms.CheckBox CbMostrar;
     }
 }

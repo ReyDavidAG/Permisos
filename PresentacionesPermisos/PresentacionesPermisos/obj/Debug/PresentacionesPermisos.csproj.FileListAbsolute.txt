@@ -12,3 +12,11 @@ C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermis
 C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.FrmRefacciones.resources
 C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.FrmTaller.resources
 C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.FrmUsuarios.resources
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\bin\Debug\Entidades.dll
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\bin\Debug\Manejadores.dll
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\bin\Debug\AccesoDatos.dll
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\bin\Debug\MySql.Data.dll
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\bin\Debug\Entidades.pdb
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\bin\Debug\Manejadores.pdb
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\bin\Debug\AccesoDatos.pdb
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.csproj.CopyComplete

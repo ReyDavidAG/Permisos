@@ -26,5 +26,9 @@ namespace Entidades
             Fechanacimiento = fechanacimiento;
             RFC = rfc;
         }
+
+        public EntidadUsuarios()
+        {
+        }
     }
 }

@@ -1,0 +1,6 @@
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\Entidades\bin\Debug\Entidades.dll
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\Entidades\bin\Debug\Entidades.pdb
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\Entidades\obj\Debug\Entidades.dll
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\Entidades\obj\Debug\Entidades.pdb

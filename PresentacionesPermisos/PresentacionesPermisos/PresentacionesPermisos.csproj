@@ -129,5 +129,15 @@
   <ItemGroup>
     <None Include="Resources\icons8-knight-48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{3b9b53d1-743b-490b-9886-62c06ad14bad}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Manejadores\Manejadores.csproj">
+      <Project>{e0eaadc1-d877-4cae-82ab-fb3ac834635d}</Project>
+      <Name>Manejadores</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
