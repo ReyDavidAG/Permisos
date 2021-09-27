@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentacionesPermisos", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccesoDatos", "AccesoDatos\AccesoDatos.csproj", "{E3AFFCAF-1B79-4AE0-B593-FFC641219E00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manejadores", "Manejadores\Manejadores.csproj", "{E0EAADC1-D877-4CAE-82AB-FB3AC834635D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{3B9B53D1-743B-490B-9886-62C06AD14BAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{E3AFFCAF-1B79-4AE0-B593-FFC641219E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3AFFCAF-1B79-4AE0-B593-FFC641219E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3AFFCAF-1B79-4AE0-B593-FFC641219E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0EAADC1-D877-4CAE-82AB-FB3AC834635D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0EAADC1-D877-4CAE-82AB-FB3AC834635D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0EAADC1-D877-4CAE-82AB-FB3AC834635D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0EAADC1-D877-4CAE-82AB-FB3AC834635D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B9B53D1-743B-490B-9886-62C06AD14BAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B9B53D1-743B-490B-9886-62C06AD14BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B9B53D1-743B-490B-9886-62C06AD14BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B9B53D1-743B-490B-9886-62C06AD14BAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
