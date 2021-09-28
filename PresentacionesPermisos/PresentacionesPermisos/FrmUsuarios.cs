@@ -16,16 +16,19 @@ namespace PresentacionesPermisos
     {
         ManejadorUsuarios mu;
         public static EntidadUsuarios eu;
+        public static EntidadPermisos ep;
         int i = 0;
         public FrmUsuarios()
         {
             InitializeComponent();
             mu = new ManejadorUsuarios();
             eu = new EntidadUsuarios();
+            ep = new EntidadPermisos();
         }
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
+            eu.Id = 0;
             eu.Nombre = "";
             eu.Password = "";
             eu.Apellidop = "";
@@ -87,6 +90,7 @@ namespace PresentacionesPermisos
         private void DTG_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
             i = e.RowIndex;
+            eu.Id = int.Parse(DTG.Rows[i].Cells[0].Value.ToString()); 
             eu.Nombre = DTG.Rows[i].Cells[1].Value.ToString();
             eu.Password = DTG.Rows[i].Cells[2].Value.ToString();
             eu.Apellidop = DTG.Rows[i].Cells[3].Value.ToString();

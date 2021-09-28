@@ -13,20 +13,22 @@ namespace Manejadores
     {
         Base b = new Base("localhost", "root", "", "taller", 3306);
 
-        public string Guardar(EntidadUsuarios user)
+        public string Guardar(EntidadUsuarios user, EntidadPermisos per)
         {
-            return b.Comando(string.Format("insert into usuarios values(null, '{0}', '{1}', '{2}', '{3}', '{4}', '{5}');", user.Nombre, user.Password, user.Apellidop, user.Apellidom,
-                user.Fechanacimiento, user.RFC));
+            return b.Comando(string.Format("insert into usuarios values('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}'); insert into permisos values(null, '{7}', '{8}', '{9}', '{10}', '{0}');",user.Id, user.Nombre, user.Password, user.Apellidop, user.Apellidom,
+                user.Fechanacimiento, user.RFC, per.Lectura, per.Escritura, per.Eliminacion, per.Actualizacion));
         }
         public void Mostrar(DataGridView tabla, string dato)
         {
             tabla.DataSource = b.Mostrar(string.Format("select * from usuarios where nombre like '%{0}%' or rfc like '%{0}%';", dato), "usuarios").Tables["usuarios"];
             tabla.AutoResizeColumns();
         }
-        public string Editar(EntidadUsuarios user)
+        public string Editar(EntidadUsuarios user, EntidadPermisos per)
         {
-            return b.Comando(string.Format("update usuarios set nombre = '{0}', password = '{1}', apellidop = '{2}', apellidom = '{3}', " +
-                "fechanacimiento = '{4}', rfc = '{5}' where rfc = '{5}';", user.Nombre, user.Password, user.Apellidop, user.Apellidom, user.Fechanacimiento, user.RFC));
+            return b.Comando(string.Format("update usuarios set idusuario = '{0}', nombre = '{1}', password = '{2}', apellidop = '{3}', apellidom = '{4}', " +
+                "fechanacimiento = '{5}', rfc = '{6}' where idusuario = '{0}'; update permisos set lectura = '{7}', escritura = '{8}', eliminacion = '{9}', actualizacion = '{10}' where fkidusuario = '{0}'", 
+                user.Id, user.Nombre,
+                user.Password, user.Apellidop, user.Apellidom, user.Fechanacimiento, user.RFC, per.Lectura, per.Escritura, per.Eliminacion, per.Actualizacion));
         }
         public string Borrar(EntidadUsuarios user)
         {
@@ -34,7 +36,8 @@ namespace Manejadores
             DialogResult rs = MessageBox.Show("Está seguro de eliminar " + user.Nombre, "Atencion!", MessageBoxButtons.YesNo);
             if (rs == DialogResult.Yes)
             {
-                r = b.Comando(string.Format("delete from usuarios where rfc = '{0}';", user.RFC));
+                r = b.Comando(string.Format("delete from permisos where fkidusuario = '{0}';"+
+                    "delete from usuarios where idusuario = '{0}';", user.Id));
             }
             return r;
         }

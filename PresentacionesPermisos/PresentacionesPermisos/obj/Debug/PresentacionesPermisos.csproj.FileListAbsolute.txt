@@ -20,3 +20,4 @@ C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermis
 C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\bin\Debug\Manejadores.pdb
 C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\bin\Debug\AccesoDatos.pdb
 C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.csproj.CopyComplete
+C:\Users\reyda\source\repos\Permisos\PresentacionesPermisos\PresentacionesPermisos\obj\Debug\PresentacionesPermisos.FrmAddPermiso.resources

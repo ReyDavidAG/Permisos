@@ -47,11 +47,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="FrmAddPermiso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddPermiso.Designer.cs">
+      <DependentUpon>FrmAddPermiso.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAddUser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAddUser.Designer.cs">
       <DependentUpon>FrmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPermisos.Designer.cs">
+      <DependentUpon>FrmPermisos.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
@@ -91,6 +103,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmAddPermiso.resx">
+      <DependentUpon>FrmAddPermiso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAddUser.resx">
       <DependentUpon>FrmAddUser.cs</DependentUpon>
     </EmbeddedResource>

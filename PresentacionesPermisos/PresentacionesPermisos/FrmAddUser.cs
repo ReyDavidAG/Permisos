@@ -20,6 +20,7 @@ namespace PresentacionesPermisos
             mu = new ManejadorUsuarios();
             if (FrmUsuarios.eu.RFC.Length != 0)
             {
+                TxtId.Text = FrmUsuarios.eu.Id.ToString();
                 TxtNombre.Text = FrmUsuarios.eu.Nombre;
                 TxtPassword.Text = FrmUsuarios.eu.Password;
                 TxtApellidoP.Text = FrmUsuarios.eu.Apellidop;
@@ -38,14 +39,21 @@ namespace PresentacionesPermisos
         {
             if (FrmUsuarios.eu.RFC.Length == 0)
             {
-                MessageBox.Show(mu.Guardar(new EntidadUsuarios(TxtNombre.Text, TxtPassword.Text, TxtApellidoP.Text, TxtApellidoM.Text, TxtFechanacimiento.Text, TxtRFC.Text)));
+                MessageBox.Show(mu.Guardar(new EntidadUsuarios(int.Parse(TxtId.Text), TxtNombre.Text, TxtPassword.Text, TxtApellidoP.Text, TxtApellidoM.Text, TxtFechanacimiento.Text, TxtRFC.Text),
+                    new EntidadPermisos(CbLectura.Checked, CbEscritura.Checked, CbEliminacion.Checked, CbActualizacion.Checked, int.Parse(TxtId.Text))));
                 Close();
             }
             else
             {
-                MessageBox.Show(mu.Editar(new EntidadUsuarios(TxtNombre.Text, TxtPassword.Text, TxtApellidoP.Text, TxtApellidoM.Text, TxtFechanacimiento.Text, FrmUsuarios.eu.RFC)));
+                MessageBox.Show(mu.Editar(new EntidadUsuarios(FrmUsuarios.eu.Id, TxtNombre.Text, TxtPassword.Text, TxtApellidoP.Text, TxtApellidoM.Text, TxtFechanacimiento.Text, TxtRFC.Text),
+                    new EntidadPermisos(CbLectura.Enabled, CbEscritura.Enabled, CbEliminacion.Enabled, CbActualizacion.Enabled, int.Parse(TxtId.Text))));
             }
             Close();
+        }
+
+        private void DTGP_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
