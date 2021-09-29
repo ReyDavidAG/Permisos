@@ -8,7 +8,7 @@ namespace Entidades
 {
     public class EntidadPermisos
     {
-        public bool Lectura { get; set; }
+        public Boolean Lectura { get; set; }
         public bool Escritura { get; set; }
         public bool Eliminacion { get; set; }
         public bool Actualizacion { get; set; }

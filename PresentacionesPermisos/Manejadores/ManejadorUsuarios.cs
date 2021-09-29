@@ -13,22 +13,23 @@ namespace Manejadores
     {
         Base b = new Base("localhost", "root", "", "taller", 3306);
 
-        public string Guardar(EntidadUsuarios user, EntidadPermisos per)
+        public string Guardar(EntidadUsuarios user)
         {
-            return b.Comando(string.Format("insert into usuarios values('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}'); insert into permisos values(null, '{7}', '{8}', '{9}', '{10}', '{0}');",user.Id, user.Nombre, user.Password, user.Apellidop, user.Apellidom,
-                user.Fechanacimiento, user.RFC, per.Lectura, per.Escritura, per.Eliminacion, per.Actualizacion));
+            return b.Comando(string.Format("insert into usuarios values('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}');",
+                user.Id, user.Nombre, user.Password, user.Apellidop, user.Apellidom,
+                user.Fechanacimiento, user.RFC));
         }
         public void Mostrar(DataGridView tabla, string dato)
         {
             tabla.DataSource = b.Mostrar(string.Format("select * from usuarios where nombre like '%{0}%' or rfc like '%{0}%';", dato), "usuarios").Tables["usuarios"];
             tabla.AutoResizeColumns();
         }
-        public string Editar(EntidadUsuarios user, EntidadPermisos per)
+        public string Editar(EntidadUsuarios user)
         {
             return b.Comando(string.Format("update usuarios set idusuario = '{0}', nombre = '{1}', password = '{2}', apellidop = '{3}', apellidom = '{4}', " +
-                "fechanacimiento = '{5}', rfc = '{6}' where idusuario = '{0}'; update permisos set lectura = '{7}', escritura = '{8}', eliminacion = '{9}', actualizacion = '{10}' where fkidusuario = '{0}'", 
+                "fechanacimiento = '{5}', rfc = '{6}' where idusuario = '{0}';", 
                 user.Id, user.Nombre,
-                user.Password, user.Apellidop, user.Apellidom, user.Fechanacimiento, user.RFC, per.Lectura, per.Escritura, per.Eliminacion, per.Actualizacion));
+                user.Password, user.Apellidop, user.Apellidom, user.Fechanacimiento, user.RFC));
         }
         public string Borrar(EntidadUsuarios user)
         {

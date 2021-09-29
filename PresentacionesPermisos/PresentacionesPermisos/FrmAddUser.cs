@@ -14,11 +14,13 @@ namespace PresentacionesPermisos
     public partial class FrmAddUser : Form
     {
         ManejadorUsuarios mu;
+        ManejadorPermisos mp;
         public FrmAddUser()
         {
             InitializeComponent();
             mu = new ManejadorUsuarios();
-            if (FrmUsuarios.eu.RFC.Length != 0)
+            mp = new ManejadorPermisos();
+            if (FrmUsuarios.eu.Id != 0)
             {
                 TxtId.Text = FrmUsuarios.eu.Id.ToString();
                 TxtNombre.Text = FrmUsuarios.eu.Nombre;
@@ -37,18 +39,25 @@ namespace PresentacionesPermisos
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
-            if (FrmUsuarios.eu.RFC.Length == 0)
+
+            //MessageBox.Show(CbLectura.Checked.ToString());
+            
+            if (FrmUsuarios.eu.Id == 0)
             {
-                MessageBox.Show(mu.Guardar(new EntidadUsuarios(int.Parse(TxtId.Text), TxtNombre.Text, TxtPassword.Text, TxtApellidoP.Text, TxtApellidoM.Text, TxtFechanacimiento.Text, TxtRFC.Text),
-                    new EntidadPermisos(CbLectura.Checked, CbEscritura.Checked, CbEliminacion.Checked, CbActualizacion.Checked, int.Parse(TxtId.Text))));
+                MessageBox.Show(mu.Guardar(new EntidadUsuarios(int.Parse(TxtId.Text), TxtNombre.Text, TxtPassword.Text, 
+                    TxtApellidoP.Text, TxtApellidoM.Text, TxtFechanacimiento.Text, TxtRFC.Text)));
+                MessageBox.Show(mp.Guardar(new EntidadPermisos(CbLectura.Checked, CbEscritura.Checked, CbEliminacion.Checked, CbActualizacion.Checked, int.Parse(TxtId.Text))));
                 Close();
             }
             else
             {
-                MessageBox.Show(mu.Editar(new EntidadUsuarios(FrmUsuarios.eu.Id, TxtNombre.Text, TxtPassword.Text, TxtApellidoP.Text, TxtApellidoM.Text, TxtFechanacimiento.Text, TxtRFC.Text),
-                    new EntidadPermisos(CbLectura.Enabled, CbEscritura.Enabled, CbEliminacion.Enabled, CbActualizacion.Enabled, int.Parse(TxtId.Text))));
+                MessageBox.Show(mu.Editar(new EntidadUsuarios(FrmUsuarios.eu.Id, TxtNombre.Text, TxtPassword.Text, TxtApellidoP.Text,
+                    TxtApellidoM.Text, TxtFechanacimiento.Text, TxtRFC.Text)));
+                MessageBox.Show(mp.Editar(new EntidadPermisos(CbLectura.Checked, CbEscritura.Checked, CbEliminacion.Checked, CbActualizacion.Checked, FrmUsuarios.eu.Id)));
             }
             Close();
+
+
         }
 
         private void DTGP_CellContentClick(object sender, DataGridViewCellEventArgs e)
